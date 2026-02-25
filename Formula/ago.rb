@@ -12,4 +12,11 @@ class Ago < Formula
   def install
     odie "Install ago from a tagged release: brew install yanqianglu/tap/ago"
   end
+
+  def caveats
+    <<~EOS
+      To also install the macOS app (menu bar + main window):
+        brew install --cask yanqianglu/tap/ago
+    EOS
+  end
 end
