@@ -5,16 +5,16 @@ Homebrew formulae for [ago](https://github.com/yanqianglu/ago) and related tools
 ## Install
 
 ```bash
-# CLI only
-brew install yanqianglu/tap/ago
-
-# macOS app (includes CLI)
+# macOS — one command, gets everything (app + CLI + daemon)
 brew install --cask yanqianglu/tap/ago
+
+# CLI only (macOS & Linux)
+brew install yanqianglu/tap/ago
 ```
 
 ## Available Packages
 
-| Package | Type | Description |
-|---------|------|-------------|
-| `ago` | Formula | CLI + daemon |
-| `ago` | Cask | macOS app (menu bar + main window) |
+| Package | Type | What you get |
+|---------|------|--------------|
+| `ago` | Cask | macOS app + CLI + daemon (recommended for macOS) |
+| `ago` | Formula | CLI only (all platforms, auto-updated by cargo-dist) |
